@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Panel del Profesor - STUDY+</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .btn-hover:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .profile-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .section-card {
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .section-card:hover {
+        transform: scale(1.02);
+      }
+      .summary-card {
+        background-color: #fffbcc;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .summary-card:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+    <div class="min-h-screen flex flex-col p-4">
+      <!-- Header Section -->
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <img src="Imagenes/imagen.profesor.png.png" alt="Perfil Profesor" class="profile-img mr-3" />
+          <h2 class="text-2xl font-bold">Hola, Profesor Herbert!</h2>
+        </div>
+        <button class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Class Summary Section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="summary-card">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-600 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V10l-5 4-5-4v10h5z" />
+          </svg>
+          <h4 class="text-lg font-bold">Estudiantes</h4>
+          <p class="text-gray-600">34 estudiantes</p>
+        </div>
+        <div class="summary-card">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-600 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 13h18m-6 6h6" />
+          </svg>
+          <h4 class="text-lg font-bold">Tareas</h4>
+          <p class="text-gray-600">13 pendientes</p>
+        </div>
+        <div class="summary-card">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-600 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5v14" />
+          </svg>
+          <h4 class="text-lg font-bold">Calificaciones</h4>
+          <p class="text-gray-600">32 pendientes</p>
+        </div>
+      </div>
+
+      <!-- Quick Actions Section -->
+      <div class="section-card">
+        <h3 class="text-lg font-semibold mb-3">Acciones Rápidas</h3>
+        <div class="flex gap-4">
+          <button class="flex-1 btn-hover bg-blue-600 text-white font-bold py-2 px-4 rounded-md">Crear Tarea</button>
+          <button class="flex-1 btn-hover bg-green-600 text-white font-bold py-2 px-4 rounded-md">Subir Notas</button>
+        </div>
+      </div>
+
+      <!-- Announcements Section -->
+      <div class="section-card">
+        <h3 class="text-lg font-semibold mb-3">Anuncios</h3>
+        <div class="mb-3">
+          <h4 class="font-bold">Nueva Característica: Comentarios de Audio</h4>
+          <p class="text-sm text-gray-600 mb-2">Ayer a las 9:01 AM</p>
+          <p class="text-gray-700">Estamos emocionados de anunciar una nueva característica que te permite dejar comentarios de audio en el trabajo de los estudiantes.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Bienvenidos a la clase</h4>
+          <p class="text-sm text-gray-600 mb-2">10 de noviembre a las 21:00 PM</p>
+          <p class="text-gray-700">Estamos muy emocionados de comenzar este camino contigo. Por favor, asegúrate de completar la lectura asignada antes de nuestra próxima clase.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

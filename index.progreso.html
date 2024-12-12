@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecciones y Progreso - STUDY+</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900" />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .btn-hover:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .activity-card {
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      .activity-card:hover {
+        transform: scale(1.05);
+      }
+      .activity-card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+    <div class="min-h-screen flex flex-col p-4">
+      <!-- Header Section -->
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Lecciones y Progreso</h2>
+        <button class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Upcoming Activities Section -->
+      <div class="mb-8">
+        <h3 class="section-title">Próximas actividades</h3>
+        <div class="flex flex-col gap-4">
+          <div class="activity-card">
+            <img src="Imagenes/imagen.queeslaeconomia.png.png"  alt="Que es la economia" />
+            <div>
+              <h4 class="font-bold">Mira el video: ¿Qué es la economía?</h4>
+              <p class="text-sm text-gray-600">Para el 10 de diciembre</p>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img src="Imagenes/imagen.mercadoprecios.png.png" alt="Lectura Mercado" />
+            <div>
+              <h4 class="font-bold">Leer sobre el mercado y los precios</h4>
+              <p class="text-sm text-gray-600">Para el 12 de diciembre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Content Section -->
+      <div>
+        <h3 class="section-title">Contenido reciente</h3>
+        <div class="flex flex-col gap-4">
+          <div class="activity-card">
+            <img src="Imagenes/imagenteriaconsumidor.png.png" alt="Video Teoría del Consumidor" />
+            <div>
+              <h4 class="font-bold">Video: La teoría del consumidor</h4>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img src="Imagenes/imagenprecios.png.png" alt="Video El Mercado y Los Precios" />
+            <div>
+              <h4 class="font-bold">Video: El mercado y los precios</h4>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img src="Imagenes/imagencosto.png.png" alt="Video Los Costos de Producción" />
+            <div>
+              <h4 class="font-bold">Video: Los costos de producción</h4>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img src="Imagenes/imagencosto.png.png" alt="Lectura Costos de Producción" />
+            <div>
+              <h4 class="font-bold">Lectura: Los costos de producción</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <nav class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-md">
+        <div class="flex justify-around py-3">
+          <a href="leccionesyprogreso" class="text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6a9 9 0 11-6 8" />
+            </svg>
+            <p class="text-xs">Inicio</p>
+          </a>
+          <a href="#" class="text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18m-6 6H6" />
+            </svg>
+            <p class="text-xs">Clases</p>
+          </a>
+          <a href="#" class="text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724a2 2 0 01-.553-3.276l6-6 5.447 2.724a2 2 0 01.553 3.276l-6 6z" />
+            </svg>
+            <p class="text-xs">Grupos</p>
+          </a>
+          <a href="index.calificaciones.html" class="text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 18.364a4 4 0 015.656 0M15 11a4 4 0 00-8 0m8 8a8 8 0 11-16 0h16z" />
+            </svg>
+            <p class="text-xs">Calificaciones</p>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

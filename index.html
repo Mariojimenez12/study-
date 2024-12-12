@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Registro - STUDY+</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Incluir Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Incluir archivo JavaScript -->
+    <script src="main.js" defer></script>
+
+    <style>
+      .btn-hover:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .divider {
+        height: 100%;
+        width: 2px;
+        background-color: #e5e7eb;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-cover bg-center text-white" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); background-color: rgba(0, 0, 0, 0.8); background-blend-mode: darken;">
+    <div class="text-center mb-2 p-2 rounded-lg">
+      <div class="flex items-center justify-center">
+        <h1 class="text-[#00d9ff] text-[42px] font-extrabold leading-tight tracking-[-0.015em]">STUDY+</h1>
+      </div>
+      <p class="text-white text-3xl mt-2 font-bold shadow-lg">Impulsando la Educación del Futuro en Colombia.</p>
+      <p class="text-white text-xl font-bold mt-1 tracking-wide">La Plataforma Educativa Líder Para Estudiantes De 6º a 11º Grado, Guiada Por Inteligencia Artificial.</p>
+    </div>
+    <div class="relative flex size-full min-h-screen items-center justify-center px-4 sm:px-8" style='font-family: Lexend, "Noto Sans", sans-serif; margin-top: -20px;'>
+      <div class="flex bg-gray-800 p-6 shadow-lg text-center w-full max-w-4xl justify-between rounded-lg gap-8" style="background: rgba(0, 0, 0, 0.7);">
+        <!-- Login Section -->
+        <div class="w-full max-w-xs">
+          <h3 class="text-white text-lg md:text-xl font-bold mb-4">¡Hola Bienvenido!</h3>
+          <p class="text-gray-300 mb-4">Para ingresar a STUDY+ accede con tu <strong>usuario</strong> y <strong>contraseña</strong></p>
+          <input type="text" placeholder="Usuario" class="w-full p-3 mb-3 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          <input type="password" placeholder="Contraseña" class="w-full p-3 mb-4 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          <button id="btnIngresar" class="btn-hover flex min-w-[150px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] w-full mt-4">
+            <span class="truncate">Ingresar</span>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider" style="background-color: white; height: 100%; width: 2px; margin: 0 20px;"></div>
+
+        <!-- Register Section -->
+        <div class="w-full max-w-xs">
+          <h3 class="text-white text-lg md:text-xl font-bold mb-4">Regístrate</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="Nombre" class="p-3 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+            <input type="text" placeholder="Apellido" class="p-3 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          </div>
+          <input type="text" placeholder="Usuario" class="w-full p-3 mt-4 mb-3 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          <input type="email" placeholder="Correo electrónico" class="w-full p-3 mb-3 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          <input type="password" placeholder="Contraseña" class="w-full p-3 mb-4 rounded-md border border-gray-500 bg-gray-700 text-white focus:outline-none focus:border-blue-500">
+          <button class="btn-hover flex min-w-[150px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] w-full mt-4">
+            <span class="truncate">Guardar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
